@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>W Chat Room</title>
+</head>
+<body>
+  <nav><input id="usernameEl" class="usernameEl"  placeholder="Guest"/> <p>Room <span id="roomEl"></span></p></nav>
+  <div class="chatRoomCn" id="chatRoomCn">
+    <div id="chatEl" class="chatEl">
+      <div class="chatMessageCn">
+        <p class="chatMessageNameEl">Guest</p><p class="chatMessageEl">I just think that typing a lot of letters for the purpose of filling this up so I can see how it'll look with the css, which stands for cas - I don't know how to spell that so I'll talk about something else, like I was just listening to the song called 'Bout it, which is cool but has a weird ending, and now I hear Tame Impala inside of the programmingjs spotify playlist</p>
+      </div>
+      <div class="alternateChatMessageCn">
+        <p class="chatMessageNameEl">Guest</p><p class="chatMessageEl">I just think that typing a lot of letters for the purpose of filling this up so I can see how it'll look with the css, which stands for cas - I don't know how to spell that so I'll talk about something else, like I was just listening to the song called 'Bout it, which is cool but has a weird ending, and now I hear Tame Impala inside of the programmingjs spotify playlist</p>
+      </div>
+    
+    </div>
+    <div class="chatInputCn"><textarea type="text" class="chatInputI" id="chatInputI"></textarea><button id="sendBtn" class="sendBtn"><p class="sendingMessage" id="sendingMessageEl">Send</p></button></div>
+  </div>
+
+  <div class="findNewRoomCn"><input type="text" class="newRoomI" id="newRoomI"><button id="newRoomBtn" class="newRoomBtn">Find New Room</button></div>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  
+  <script src="index.js" type="module"></script>
+</body>
+</html>

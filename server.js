@@ -17,6 +17,12 @@ io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 
   socket.on("join room", (room) => {
+    for (const r of socket.rooms) {
+    if (r !== socket.id) {
+      socket.leave(r);
+      console.log(`Socket ${socket.id} left room ${r}`);
+    }
+  }
     socket.join(room);
     console.log(`Socket ${socket.id} joined room ${room}`);
   });

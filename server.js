@@ -22,7 +22,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("chat message", ({ room, username, message }) => {
-    io.to(room).emit("chat message", { username, message });
+    io.to(room).broadcast("chat message", { username, message });
   });
 
   socket.on("disconnect", () => {

@@ -19,7 +19,12 @@ let onAlternateMessage = false;
 let message = "";
 
 // Make sure your server is running on the right URL and port!
-const socket = io("http://localhost:3000"); // fixed the URL typo here
+// Replace this:
+// const socket = io("http://localhost:3000");
+
+// With this:
+const socket = io();
+ // fixed the URL typo here
 
 // Listen for connection confirmation
 socket.on("connect", () => {
